@@ -1,0 +1,21 @@
+{
+  "extends": "@tsconfig/recommended",
+  "compilerOptions": {
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "rootDir": "./",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "strictPropertyInitialization": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "incremental": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "declaration": false,
+    "paths": {
+      "@prisma/client": ["prisma/client/index.d.ts"]
+    }
+  },
+  "include": ["package.json", "src/**/*"]
+}
